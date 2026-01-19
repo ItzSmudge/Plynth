@@ -1,6 +1,6 @@
-# ☃️ Git Workshop: Do You Want To Build A Repo?
+# ☃️ Git Workshop: Do You Wanna Build A Repo?
 
-> "The cold never bothered me anyway..." — *Every developer after mastering Git.*
+> "The cold never bothered me anyway..." - *literally every developer after mastering Git.*
 
 ## 1. Overview
 Git is a Version Control System (VCS). It is the most popular tool modern developers use to collaborate and build projects. It offers transparent history, rollbacks, and parallel versions.
@@ -32,7 +32,7 @@ A git repository is a folder managed by git. It has three main states, like an a
 
 ## 3. Activity 1: The Human Git Repo
 
-Before we touch the keyboards, we are going to act out how Git works physically.
+Let's find out how Git works with a live activity:
 
 **Roles:**
 * **Head:** Points to the most recent commit.
@@ -77,3 +77,4 @@ Finished early? Want to learn more stuff?
 ---
 
 *Plynth - 2026*
+
