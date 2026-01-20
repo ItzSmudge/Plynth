@@ -113,29 +113,29 @@ git checkout main
 Notice something surprising:
 Your summer changes are gone from the file.
 
-They weren’t deleted — they’re just stored safely in the other branch.
+They weren’t deleted! They’re just stored safely in the other branch.
 Each branch remembers its own version of the project.
 
-### 4. The Mistake & The Revert
+### 4. Dealing with Mistakes
 
 Oh no! You accidentally added a carrot nose… but Sven ate it.
 
 Edit `drawsnowman.py` and add a carrot nose.
 
 Save it, then commit the change:
-
+ 
 ```bash
 git add drawsnowman.py
 git commit -m "Added carrot nose"
 ```
 You’ve now saved a change you *don’t* want.
 
-**Realise the Mistake**
+**Realise the mistake**
 
 Check your project history to find the commit where the nose was added using ```git log```.
 Copy the **commit hash** (the long ID) for ```"Added carrot nose"```.
 
-**Undo It (Safely)**
+**Undo it (Safely)**
 
 To remove the carrot nose without rewriting history, run:
 
