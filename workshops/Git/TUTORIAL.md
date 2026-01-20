@@ -298,7 +298,6 @@ GitHub shows: **"Can't automatically merge"** because both changed the same line
 ```
 
 ---
-
 ## 4. Peace At Last
 
 Elsa reviews the updated PR and clicks **Merge**, with your snowman looking better than ever! ⛄
