@@ -206,3 +206,99 @@ Instead of deleting the commit, Git creates a **new commit that reverses it**.
 2. If the arms look good, click **Merge Pull Request**.
 
 3. Your snowman is complete! ⛄
+
+---
+
+# The Merge Conflict (This is bad)
+
+**Scenario:** Elsa and Anna both try to decorate the snowman's neck at the same time. Chaos ensues! ❄️💥
+
+---
+## 1. Elsa's Move (Local)
+
+Elsa decides to add a cozy scarf.
+
+1. Create a new branch:
+```bash
+   git checkout -b feature/scarf
+```
+
+2. Edit the code to add a scarf line.
+
+3. Commit and push:
+```bash
+   git add .
+   git commit -m "Added warm scarf"
+   git push origin feature/scarf
+```
+
+4. Go to GitHub and merge this PR into `main`.
+
+
+## 2. Anna's Move (Local)
+
+Anna decides to add a fancy pearl necklace.  
+**⚠️ Crucial:** Anna hasn't pulled Elsa's changes yet, so she thinks the neck is empty!
+
+1. Switch to a new branch:
+```bash
+   git checkout -b feature/necklace
+```
+
+2. Edit the **same line** Elsa just changed and add a necklace.
+
+3. Commit and push:
+```bash
+   git add .
+   git commit -m "Added pearl necklace"
+   git push origin feature/necklace
+```
+
+4. Go to GitHub and create a Pull Request.
+
+---
+
+## 3. The Conflict 
+
+GitHub shows: **"Can't automatically merge"** — both changed the same line!
+
+**Anna must resolve this:**
+
+1. Link to Elsa's original repo (call it `upstream`):
+```bash
+   git remote add upstream <url-of-elsa-repo>
+```
+
+2. Fetch Elsa's latest changes:
+```bash
+   git fetch upstream
+```
+
+3. Merge Elsa's `main` into your branch:
+```bash
+   git merge upstream/main
+```
+
+4. **BOOM! Conflict detected!** Open the file in your editor and you'll see:
+```python
+   <<<<<<< HEAD
+   print("  (:::)  ")  # Anna's necklace
+   =======
+   print("  ~===~  ")  # Elsa's scarf
+   >>>>>>> upstream/main
+```
+
+5. **Decide what to keep:** Choose one, combine both, or create a compromise. Delete the conflict markers (`<<<`, `===`, `>>>`).
+
+6. Save the file, then finish the merge:
+```bash
+   git add .
+   git commit -m "Resolved neckwear conflict"
+   git push origin feature/necklace
+```
+
+---
+
+## 4. Peace At Last
+
+Elsa reviews the updated PR and clicks **Merge**, with your snowman looking better than ever! ⛄
