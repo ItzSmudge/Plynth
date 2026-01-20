@@ -205,4 +205,4 @@ Instead of deleting the commit, Git creates a **new commit that reverses it**.
 
 2. If the arms look good, click **Merge Pull Request**.
 
-3. The snowman is complete! ⛄
+3. Your snowman is complete! ⛄
