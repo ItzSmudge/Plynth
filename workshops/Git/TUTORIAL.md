@@ -143,3 +143,66 @@ To remove the carrot nose without rewriting history, run:
 git revert < your-commit-hash >
 ```
 Instead of deleting the commit, Git creates a **new commit that reverses it**.
+
+---
+
+# The Kingdom (GitHub Setup)
+
+**Elsa (Maintainer) Only:**
+
+1. Head to GitHub and create a new repository called `snowman`.
+
+2. Connect your local folder to your new GitHub repo:
+```bash
+   git remote add origin <your-github-url>
+   git push -u origin main
+```
+
+3. **Protect the main branch** so nobody can accidentally break the snowman:
+   - Go to your repo → **Settings** → **Branches**
+   - Click **Add Branch Protection Rule**
+   - Branch name pattern: `main`
+   - Check: **"Require a pull request before merging"**
+   - Save changes
+   
+   🔒 The gates are now locked! All changes must be reviewed before merging.
+
+---
+
+#  The Collaboration
+
+**Anna (Contributor) Joins:**
+
+1. Visit Elsa's GitHub repo and click the **Fork** button (top right).
+
+2. Clone *your* fork to your computer:
+```bash
+   git clone <url-of-your-fork>
+   cd snowman
+```
+
+**Anna's Mission:**
+
+1. Create a branch for your feature:
+```bash
+   git checkout -b feature/arms
+```
+
+2. Edit the code to add stick arms to the snowman.
+
+3. Save and push your changes:
+```bash
+   git add .
+   git commit -m "Added stick arms"
+   git push origin feature/arms
+```
+
+4. Go to GitHub and click **"Compare & Pull Request"** to propose your changes.
+
+**Elsa's Duty:**
+
+1. Review Anna's pull request on GitHub.
+
+2. If the arms look good, click **Merge Pull Request**.
+
+3. The snowman is complete! ⛄
