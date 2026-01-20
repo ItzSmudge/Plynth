@@ -61,7 +61,7 @@ Ready to get hands-on? We will pair up into **Elsas (Maintainers)** and **Annas 
 
 Finished early? Want to learn more stuff?
 
-👉 **[View the Cheat Sheet & Advanced Topics](./CHEAT_SHEET.md)**
+👉 **[View the Cheat Sheet & Advanced Topics](./CHEATSHEET.md)**
 
 ### Quick Summary of Commands
 | Command | Analogy | Description |
@@ -77,4 +77,5 @@ Finished early? Want to learn more stuff?
 ---
 
 *Plynth - 2026*
+
 
