@@ -260,7 +260,7 @@ Anna decides to add a fancy pearl necklace.
 
 ## 3. The Conflict 
 
-GitHub shows: **"Can't automatically merge"** — both changed the same line!
+GitHub shows: **"Can't automatically merge"** because both changed the same line!
 
 **Anna must resolve this:**
 
