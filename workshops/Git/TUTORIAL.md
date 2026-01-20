@@ -213,7 +213,7 @@ Instead of deleting the commit, Git creates a **new commit that reverses it**.
 
 **Scenario:** Elsa and Anna both try to decorate the snowman's neck at the same time. Chaos ensues! ❄️💥
 
----
+
 ## 1. Elsa's Move (Local)
 
 Elsa decides to add a cozy scarf.
