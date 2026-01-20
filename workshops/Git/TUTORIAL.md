@@ -7,7 +7,7 @@
 
 ---
 
-## Step 1: Start working locally
+## Start working locally
 
 **Both users** start by doing this on their own computers to warm up.
 
@@ -70,3 +70,76 @@ And just like that, Git allows you to see the entire history of your project, wi
 Try adding more commits to complete your snowman, and view your commit history. 
 
 **PS**: if you've made it this far, you should have a magic snowman just like Olaf by now!
+
+---
+
+
+## Alternate Timelines (Branching)
+*What if Olaf dreams of summer?*
+
+### 1. Create a "Summer" Timeline
+We want to try out a new idea *without touching the main snowman*.
+
+```bash
+git branch feature/summer
+git checkout feature/summer
+```
+
+This creates a new branch, which is like an alternate timeline.
+You’ve copied the project at its current state so you can experiment safely.
+
+### 2. Make Summery Changes
+
+Now you’re working inside the *summer timeline*.
+
+Edit ```drawsnowman.py``` to add sunglasses, a puddle, or anything summery.
+
+```bash
+git add drawsnowman.py
+git commit -m "Added summer sunglasses"
+```
+
+This saves your summer idea only in the ```feature/summer``` branch.
+The main version is still untouched.
+
+### 3. Return to Reality
+
+You can switch back to your main, reguar snowman timeline with the ```checkout``` command.
+
+```bash
+git checkout main
+```
+
+Notice something surprising:
+Your summer changes are gone from the file.
+
+They weren’t deleted — they’re just stored safely in the other branch.
+Each branch remembers its own version of the project.
+
+### 4. The Mistake & The Revert
+
+Oh no! You accidentally added a carrot nose… but Sven ate it.
+
+Edit `drawsnowman.py` and add a carrot nose.
+
+Save it, then commit the change:
+
+```bash
+git add drawsnowman.py
+git commit -m "Added carrot nose"
+```
+You’ve now saved a change you *don’t* want.
+
+**Realise the Mistake**
+
+Check your project history to find the commit where the nose was added using ```git log```.
+Copy the **commit hash** (the long ID) for ```"Added carrot nose"```.
+
+**Undo It (Safely)**
+
+To remove the carrot nose without rewriting history, run:
+
+```bash
+git revert < your-commit-hash >
+```
+Instead of deleting the commit, Git creates a **new commit that reverses it**.
