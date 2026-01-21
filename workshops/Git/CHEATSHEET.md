@@ -29,3 +29,5 @@
 | `git config --global user.email <email>` | Tell git your email |
 | `git config --global pull.rebase/pull.merge <true/false>` | Tell git what merge strategy you'd like to use |
 
+## SSH and signed commits
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
