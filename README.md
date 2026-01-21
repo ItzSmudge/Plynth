@@ -1,2 +1,2 @@
 # Plynth
-Add something cool here Tim :) 
+Something cool
