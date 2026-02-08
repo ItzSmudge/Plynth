@@ -4,7 +4,7 @@
 
 ---
 
-## 0. The Setup: Windows Subsystem for Linux (WSL)
+## 1. The Setup: Windows Subsystem for Linux (WSL)
 
 The Windows Subsystem for Linux (WSL) is a powerful tool that allows you to run a full Linux environment directly on Windows, without the overhead of a virtual machine or the hassle of dual-booting. 
 
@@ -72,7 +72,7 @@ Once installed, open the "Ubuntu" app from your Start menu. You will be prompted
 
 ---
 
-## 1. The Territory: Navigation
+## 2. The Territory: Navigation
 
 The Linux terminal is more than a command runner—it’s a map and compass for controlling the system. Think of the filesystem as a giant inverted tree:
 
@@ -117,7 +117,7 @@ cd -                # Go back to the previous directory you were in
 
 ---
 
-## 2. The Toolkit: Creation & Manipulation
+## 3. The Toolkit: Creation & Manipulation
 
 Unlike a GUI, the terminal allows you to manipulate files with extreme speed and precision.
 
@@ -173,7 +173,7 @@ find /home -name "*.pdf"     # Find all PDF files in /home
 
 ---
 
-## 3. The Power: Pipes & Filters
+## 4. The Power: Pipes & Filters
 
 This is the "Secret Sauce" for Data Science and AI Engineering. Linux allows you to chain small tools together to build complex data pipelines instantly.
 
@@ -239,7 +239,7 @@ cat app.log | grep "CRITICAL" | sort | uniq > report.txt
 
 ---
 
-## 4. The Law: Permissions & Superusers
+## 5. The Law: Permissions & Superusers
 
 Linux is built for multi-user security. Every file has an owner and a set of permissions.
 
@@ -272,7 +272,7 @@ sudo apt update              # Run command as root
 
 ---
 
-## 5. The Supply Chain: Package Management
+## 6. The Supply Chain: Package Management
 
 In Windows, you go to a website and download an `.exe`. In Linux, you use a package manager (like an App Store for the terminal). In Ubuntu, this is `apt`.
 
@@ -286,7 +286,7 @@ sudo apt remove nano         # Uninstall software
 
 ---
 
-## 6. The Time Machine: Git Essentials
+## 7. The Time Machine: Git Essentials
 
 For our workshop challenge, you will need to investigate the history of a codebase to find a bug.
 
@@ -298,4 +298,3 @@ git blame filename.txt       # See who wrote each line of a file (The detective 
 
 ```
 
-```
