@@ -280,7 +280,7 @@ In Windows, you go to a website and download an `.exe`. In Linux, you use a pack
 sudo apt update              # Refresh the list of available software
 sudo apt install python3     # Install Python
 sudo apt install git         # Install Git
-sudo apt remove nano         # Uninstall software
+sudo apt remove nano         # Uninstall software (please dont do this nano is useful)
 
 ```
 
