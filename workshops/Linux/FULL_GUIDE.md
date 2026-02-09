@@ -1,7 +1,9 @@
 
 # Linux: Tech Skills for an AI Era
-**Workshop Guide & Cheatsheet**
+**Workshop Guide**
 
+This a full-guide on how to get started with WSL and Linux. If you're already done setting things up or are loooking for a specific command, you might find the cheatsheet more useful!
+👉 **[View the Cheat Sheet](./CHEATSHEET.md)**
 ---
 
 ## 1. The Setup: Windows Subsystem for Linux (WSL)
