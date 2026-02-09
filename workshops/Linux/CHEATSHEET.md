@@ -1,6 +1,4 @@
-# Linux & WSL Workshop Cheatsheet
-
-##  Setup 
+# Linux & WSL Cheatsheet
 
 ### **WSL Commands**
 
